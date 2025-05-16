@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     image:
       "https://res.cloudinary.com/dh9rajm0q/image/upload/v1738777214/portfolio/joe_car_por.png",
-    title: "Artist Portfolio [WIP]",
+    title: "Artist Portfolio",
     year: 2025,
     description: {
       en: "Portfolio for illustrators and artists.",
