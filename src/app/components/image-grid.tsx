@@ -41,8 +41,8 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
           <div key={index} className="relative aspect-square">
             {image.icon && (
               <>
-                <MousePointerClick className="absolute right-0 bottom-0 z-40 m-1 animate-ping stroke-[1.75] text-background/40" />
-                <MousePointerClick className="absolute right-0 bottom-0 z-50 m-1 stroke-[1.75] text-background fill-foreground" />
+                <MousePointerClick className="absolute right-0 bottom-0 z-40 m-1 animate-ping text-black/40 [&_svg]:size-6" />
+                <MousePointerClick className="absolute right-0 bottom-0 z-50 m-1 text-black/80 fill-white" />
               </>
             )}
             {image.src && <ImageCredenza alt={image.alt} src={image.src} />}

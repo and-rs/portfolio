@@ -14,6 +14,7 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/80",
         outline: "text-foreground",
+        icon: "text-foreground [&_svg]:size-5 text-sm border-primary/30 bg-primary/10 py-1.5 font-normal flex gap-2",
       },
     },
     defaultVariants: {

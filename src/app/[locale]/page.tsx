@@ -3,7 +3,7 @@ import Image from "next/image";
 import { links } from "config";
 import { Anchor } from "@components/ui/anchor";
 import { TextShimmer } from "@components/ui/text-shimmer";
-import StacksTable from "@app/components/table";
+import StacksTable from "@app/components/stack-table";
 
 export default function Page() {
   const t = useTranslations();
