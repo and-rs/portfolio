@@ -2,7 +2,6 @@ import { ImageDialog } from "@app/components/image-dialog";
 import Marquee from "@components/marquee";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
-import { Separator } from "@radix-ui/react-separator";
 import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -53,7 +52,7 @@ export default async function Projects() {
                     ? project.description.en
                     : project.description.es}
                 </p>
-                <Separator className="my-4" />
+                <hr />
                 <div className="flex flex-row gap-2 justify-end">
                   {project.website && (
                     <ProjectsButton icon={FiGlobe} url={project.website}>

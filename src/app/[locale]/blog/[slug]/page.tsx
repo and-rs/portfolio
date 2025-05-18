@@ -3,16 +3,6 @@ import { formatDate, getBlogPosts } from "@lib/posts";
 import { metaData } from "config";
 import type { Metadata } from "next";
 
-// do I really need this???
-
-// export async function generateStaticParams() {
-//   let posts = await getBlogPosts();
-//
-//   return posts.map((post) => ({
-//     slug: post.slug,
-//   }));
-// }
-
 export async function generateMetadata({
   params,
 }): Promise<Metadata | undefined> {

@@ -12,9 +12,4 @@ export const links = {
   email: "mailto:juanb.perez96@gmail.com",
   soundcloud: "https://soundcloud.com/and_rs",
   linkedin: "https://www.linkedin.com/in/juanandresdev",
-
-  typescript: "https://www.typescriptlang.org/",
-  tailwind: "https://tailwindcss.com/",
-  python: "https://www.python.org/",
-  go: "https://go.dev/",
 };

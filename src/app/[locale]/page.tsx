@@ -3,6 +3,7 @@ import Image from "next/image";
 import { links } from "config";
 import { Anchor } from "@components/ui/anchor";
 import { TextShimmer } from "@components/ui/text-shimmer";
+import StacksTable from "@app/components/stack-table";
 
 export default function Page() {
   const t = useTranslations();
@@ -21,14 +22,12 @@ export default function Page() {
         {t.rich("homepage.about", {
           p: (chunks) => <p>{chunks}</p>,
           sc: (chunks) => <Anchor href={links.soundcloud}>{chunks}</Anchor>,
-          ts: (chunks) => <Anchor href={links.typescript}>{chunks}</Anchor>,
-          tw: (chunks) => <Anchor href={links.tailwind}>{chunks}</Anchor>,
           li: (chunks) => <Anchor href={links.linkedin}>{chunks}</Anchor>,
           tt: (chunks) => <Anchor href={links.twitter}>{chunks}</Anchor>,
-          py: (chunks) => <Anchor href={links.python}>{chunks}</Anchor>,
-          go: (chunks) => <Anchor href={links.go}>{chunks}</Anchor>,
         })}
       </div>
+
+      <StacksTable />
     </section>
   );
 }
